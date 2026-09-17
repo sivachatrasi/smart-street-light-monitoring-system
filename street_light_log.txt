@@ -1,0 +1,514 @@
+SMART STREET LIGHT DATA LOG
+===========================
+
+SIMULATION CYCLE 1
+--------------------------------------------
+L01 | Lux: 55 | Motion: NO | Status: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L02 | Lux: 17 | Motion: NO | Status: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L03 | Lux: 37 | Motion: NO | Status: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L04 | Lux: 41 | Motion: YES | Status: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L05 | Lux: 7 | Motion: NO | Status: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L06 | Lux: 6 | Motion: YES | Status: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L07 | Lux: 55 | Motion: NO | Status: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L08 | Lux: 86 | Motion: NO | Status: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+
+Current Power : 217 W
+Power Saved   : 327 W
+Energy Saving : 60.1103%
+
+SIMULATION CYCLE 2
+--------------------------------------------
+L01 | Lux: 61 | Motion: NO | Status: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L02 | Lux: 6 | Motion: NO | Status: FAULT | Brightness: 0% | Power: 0 W | Fault: YES
+L03 | Lux: 28 | Motion: YES | Status: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L04 | Lux: 18 | Motion: YES | Status: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L05 | Lux: 99 | Motion: NO | Status: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L06 | Lux: 95 | Motion: YES | Status: FAULT | Brightness: 0% | Power: 0 W | Fault: YES
+L07 | Lux: 85 | Motion: YES | Status: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L08 | Lux: 27 | Motion: YES | Status: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+
+Current Power : 204 W
+Power Saved   : 340 W
+Energy Saving : 62.5%
+
+SIMULATION CYCLE 3
+--------------------------------------------
+L01 | Lux: 42 | Motion: YES | Status: FAULT | Brightness: 0% | Power: 0 W | Fault: YES
+L02 | Lux: 78 | Motion: YES | Status: FAULT | Brightness: 0% | Power: 0 W | Fault: YES
+L03 | Lux: 12 | Motion: YES | Status: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L04 | Lux: 22 | Motion: NO | Status: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L05 | Lux: 28 | Motion: YES | Status: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L06 | Lux: 85 | Motion: NO | Status: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L07 | Lux: 81 | Motion: YES | Status: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L08 | Lux: 96 | Motion: NO | Status: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+
+Current Power : 163 W
+Power Saved   : 381 W
+Energy Saving : 70.0368%
+
+SIMULATION CYCLE 4
+--------------------------------------------
+L01 | Lux: 86 | Motion: NO | Status: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L02 | Lux: 26 | Motion: YES | Status: FAULT | Brightness: 0% | Power: 0 W | Fault: YES
+L03 | Lux: 56 | Motion: NO | Status: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L04 | Lux: 95 | Motion: YES | Status: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L05 | Lux: 40 | Motion: YES | Status: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L06 | Lux: 72 | Motion: YES | Status: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L07 | Lux: 13 | Motion: NO | Status: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L08 | Lux: 37 | Motion: NO | Status: FAULT | Brightness: 0% | Power: 0 W | Fault: YES
+
+Current Power : 95 W
+Power Saved   : 449 W
+Energy Saving : 82.5368%
+
+SIMULATION CYCLE 5
+--------------------------------------------
+L01 | Lux: 71 | Motion: NO | Status: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L02 | Lux: 7 | Motion: YES | Status: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L03 | Lux: 3 | Motion: NO | Status: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L04 | Lux: 73 | Motion: NO | Status: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L05 | Lux: 86 | Motion: YES | Status: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L06 | Lux: 19 | Motion: NO | Status: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L07 | Lux: 37 | Motion: NO | Status: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L08 | Lux: 64 | Motion: YES | Status: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+
+Current Power : 149 W
+Power Saved   : 395 W
+Energy Saving : 72.6103%
+
+
+============================================
+           TOTAL ENERGY REPORT
+============================================
+Energy Consumed : 828 Wh
+Energy Consumed : 0.828 kWh
+
+============================================
+              FAULT REPORT
+============================================
+Total Faults Detected : 6
+
+SIMULATION CYCLE 1
+L01 | Lux: 75 | Motion: NO | Status: OFF | Power: 0 W | Fault: NO
+L02 | Lux: 39 | Motion: YES | Status: FULL | Power: 68 W | Fault: NO
+L03 | Lux: 44 | Motion: YES | Status: FULL | Power: 68 W | Fault: NO
+L04 | Lux: 13 | Motion: NO | Status: DIM | Power: 27 W | Fault: NO
+L05 | Lux: 5 | Motion: YES | Status: FAULT | Power: 0 W | Fault: YES
+L06 | Lux: 42 | Motion: NO | Status: DIM | Power: 27 W | Fault: NO
+L07 | Lux: 17 | Motion: YES | Status: FULL | Power: 68 W | Fault: NO
+L08 | Lux: 38 | Motion: NO | Status: FAULT | Power: 0 W | Fault: YES
+Current Power: 258 W
+
+SIMULATION CYCLE 2
+L01 | Lux: 68 | Motion: YES | Status: OFF | Power: 0 W | Fault: NO
+L02 | Lux: 42 | Motion: YES | Status: FULL | Power: 68 W | Fault: NO
+L03 | Lux: 34 | Motion: YES | Status: FULL | Power: 68 W | Fault: NO
+L04 | Lux: 96 | Motion: NO | Status: FAULT | Power: 0 W | Fault: YES
+L05 | Lux: 82 | Motion: YES | Status: OFF | Power: 0 W | Fault: NO
+L06 | Lux: 38 | Motion: NO | Status: DIM | Power: 27 W | Fault: NO
+L07 | Lux: 88 | Motion: YES | Status: OFF | Power: 0 W | Fault: NO
+L08 | Lux: 48 | Motion: YES | Status: FAULT | Power: 0 W | Fault: YES
+Current Power: 163 W
+
+SIMULATION CYCLE 3
+L01 | Lux: 41 | Motion: NO | Status: DIM | Power: 27 W | Fault: NO
+L02 | Lux: 4 | Motion: NO | Status: DIM | Power: 27 W | Fault: NO
+L03 | Lux: 58 | Motion: NO | Status: OFF | Power: 0 W | Fault: NO
+L04 | Lux: 98 | Motion: NO | Status: FAULT | Power: 0 W | Fault: YES
+L05 | Lux: 47 | Motion: NO | Status: FAULT | Power: 0 W | Fault: YES
+L06 | Lux: 5 | Motion: NO | Status: DIM | Power: 27 W | Fault: NO
+L07 | Lux: 89 | Motion: YES | Status: OFF | Power: 0 W | Fault: NO
+L08 | Lux: 5 | Motion: NO | Status: DIM | Power: 27 W | Fault: NO
+Current Power: 108 W
+
+SIMULATION CYCLE 4
+L01 | Lux: 1 | Motion: YES | Status: FULL | Power: 68 W | Fault: NO
+L02 | Lux: 68 | Motion: YES | Status: OFF | Power: 0 W | Fault: NO
+L03 | Lux: 31 | Motion: NO | Status: DIM | Power: 27 W | Fault: NO
+L04 | Lux: 8 | Motion: NO | Status: FAULT | Power: 0 W | Fault: YES
+L05 | Lux: 41 | Motion: YES | Status: FULL | Power: 68 W | Fault: NO
+L06 | Lux: 41 | Motion: NO | Status: FAULT | Power: 0 W | Fault: YES
+L07 | Lux: 83 | Motion: YES | Status: OFF | Power: 0 W | Fault: NO
+L08 | Lux: 77 | Motion: NO | Status: OFF | Power: 0 W | Fault: NO
+Current Power: 163 W
+
+SIMULATION CYCLE 5
+L01 | Lux: 92 | Motion: YES | Status: OFF | Power: 0 W | Fault: NO
+L02 | Lux: 15 | Motion: YES | Status: FULL | Power: 68 W | Fault: NO
+L03 | Lux: 78 | Motion: NO | Status: OFF | Power: 0 W | Fault: NO
+L04 | Lux: 82 | Motion: NO | Status: FAULT | Power: 0 W | Fault: YES
+L05 | Lux: 53 | Motion: YES | Status: OFF | Power: 0 W | Fault: NO
+L06 | Lux: 22 | Motion: YES | Status: FULL | Power: 68 W | Fault: NO
+L07 | Lux: 79 | Motion: NO | Status: OFF | Power: 0 W | Fault: NO
+L08 | Lux: 63 | Motion: NO | Status: OFF | Power: 0 W | Fault: NO
+Current Power: 136 W
+
+SIMULATION CYCLE 1
+L01 | Lux: 55 | Motion: NO | Status: OFF | Power: 0 W | Fault: NO
+L02 | Lux: 84 | Motion: NO | Status: OFF | Power: 0 W | Fault: NO
+L03 | Lux: 5 | Motion: YES | Status: FULL | Power: 68 W | Fault: NO
+L04 | Lux: 80 | Motion: NO | Status: OFF | Power: 0 W | Fault: NO
+L05 | Lux: 49 | Motion: NO | Status: DIM | Power: 27 W | Fault: NO
+L06 | Lux: 89 | Motion: NO | Status: OFF | Power: 0 W | Fault: NO
+L07 | Lux: 30 | Motion: YES | Status: FULL | Power: 68 W | Fault: NO
+L08 | Lux: 60 | Motion: YES | Status: OFF | Power: 0 W | Fault: NO
+Current Power: 163 W
+
+SIMULATION CYCLE 2
+L01 | Lux: 50 | Motion: YES | Status: FULL | Power: 68 W | Fault: NO
+L02 | Lux: 12 | Motion: NO | Status: DIM | Power: 27 W | Fault: NO
+L03 | Lux: 31 | Motion: YES | Status: FULL | Power: 68 W | Fault: NO
+L04 | Lux: 92 | Motion: YES | Status: OFF | Power: 0 W | Fault: NO
+L05 | Lux: 50 | Motion: YES | Status: FAULT | Power: 0 W | Fault: YES
+L06 | Lux: 89 | Motion: YES | Status: FAULT | Power: 0 W | Fault: YES
+L07 | Lux: 75 | Motion: YES | Status: OFF | Power: 0 W | Fault: NO
+L08 | Lux: 77 | Motion: YES | Status: FAULT | Power: 0 W | Fault: YES
+Current Power: 163 W
+
+SIMULATION CYCLE 3
+L01 | Lux: 79 | Motion: NO | Status: OFF | Power: 0 W | Fault: NO
+L02 | Lux: 58 | Motion: YES | Status: OFF | Power: 0 W | Fault: NO
+L03 | Lux: 20 | Motion: YES | Status: FULL | Power: 68 W | Fault: NO
+L04 | Lux: 92 | Motion: YES | Status: OFF | Power: 0 W | Fault: NO
+L05 | Lux: 100 | Motion: NO | Status: OFF | Power: 0 W | Fault: NO
+L06 | Lux: 81 | Motion: YES | Status: OFF | Power: 0 W | Fault: NO
+L07 | Lux: 10 | Motion: NO | Status: DIM | Power: 27 W | Fault: NO
+L08 | Lux: 79 | Motion: NO | Status: OFF | Power: 0 W | Fault: NO
+Current Power: 95 W
+
+SIMULATION CYCLE 4
+L01 | Lux: 78 | Motion: NO | Status: OFF | Power: 0 W | Fault: NO
+L02 | Lux: 21 | Motion: NO | Status: DIM | Power: 27 W | Fault: NO
+L03 | Lux: 97 | Motion: NO | Status: OFF | Power: 0 W | Fault: NO
+L04 | Lux: 88 | Motion: YES | Status: OFF | Power: 0 W | Fault: NO
+L05 | Lux: 31 | Motion: YES | Status: FULL | Power: 68 W | Fault: NO
+L06 | Lux: 58 | Motion: NO | Status: OFF | Power: 0 W | Fault: NO
+L07 | Lux: 24 | Motion: NO | Status: DIM | Power: 27 W | Fault: NO
+L08 | Lux: 100 | Motion: NO | Status: OFF | Power: 0 W | Fault: NO
+Current Power: 122 W
+
+SIMULATION CYCLE 5
+L01 | Lux: 52 | Motion: YES | Status: OFF | Power: 0 W | Fault: NO
+L02 | Lux: 26 | Motion: NO | Status: FAULT | Power: 0 W | Fault: YES
+L03 | Lux: 65 | Motion: YES | Status: OFF | Power: 0 W | Fault: NO
+L04 | Lux: 95 | Motion: NO | Status: FAULT | Power: 0 W | Fault: YES
+L05 | Lux: 97 | Motion: YES | Status: FAULT | Power: 0 W | Fault: YES
+L06 | Lux: 30 | Motion: NO | Status: DIM | Power: 27 W | Fault: NO
+L07 | Lux: 82 | Motion: NO | Status: FAULT | Power: 0 W | Fault: YES
+L08 | Lux: 12 | Motion: YES | Status: FULL | Power: 68 W | Fault: NO
+Current Power: 95 W
+
+SIMULATION CYCLE 1
+L01 | Lux: 51 | Motion: NO | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L02 | Lux: 43 | Motion: YES | Expected: FULL | Actual: FULL | Power: 68 W | Fault: NO
+L03 | Lux: 34 | Motion: YES | Expected: FULL | Actual: FULL | Power: 68 W | Fault: NO
+L04 | Lux: 46 | Motion: YES | Expected: FULL | Actual: FULL | Power: 68 W | Fault: NO
+L05 | Lux: 71 | Motion: YES | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L06 | Lux: 52 | Motion: YES | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L07 | Lux: 74 | Motion: NO | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L08 | Lux: 10 | Motion: NO | Expected: DIM | Actual: DIM | Power: 27 W | Fault: NO
+Current Power: 231 W
+
+SIMULATION CYCLE 2
+L01 | Lux: 19 | Motion: YES | Expected: FULL | Actual: FULL | Power: 68 W | Fault: NO
+L02 | Lux: 86 | Motion: NO | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L03 | Lux: 72 | Motion: YES | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L04 | Lux: 75 | Motion: YES | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L05 | Lux: 23 | Motion: YES | Expected: FULL | Actual: OFF | Power: 0 W | Fault: YES
+L06 | Lux: 100 | Motion: YES | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L07 | Lux: 76 | Motion: YES | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L08 | Lux: 43 | Motion: YES | Expected: FULL | Actual: FULL | Power: 68 W | Fault: NO
+Current Power: 136 W
+
+SIMULATION CYCLE 3
+L01 | Lux: 44 | Motion: YES | Expected: FULL | Actual: OFF | Power: 0 W | Fault: YES
+L02 | Lux: 70 | Motion: YES | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L03 | Lux: 55 | Motion: YES | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L04 | Lux: 33 | Motion: NO | Expected: DIM | Actual: DIM | Power: 27 W | Fault: NO
+L05 | Lux: 25 | Motion: NO | Expected: DIM | Actual: DIM | Power: 27 W | Fault: NO
+L06 | Lux: 23 | Motion: NO | Expected: DIM | Actual: DIM | Power: 27 W | Fault: NO
+L07 | Lux: 94 | Motion: NO | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L08 | Lux: 75 | Motion: NO | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+Current Power: 81 W
+
+SIMULATION CYCLE 4
+L01 | Lux: 79 | Motion: NO | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L02 | Lux: 5 | Motion: NO | Expected: DIM | Actual: DIM | Power: 27 W | Fault: NO
+L03 | Lux: 29 | Motion: YES | Expected: FULL | Actual: FULL | Power: 68 W | Fault: NO
+L04 | Lux: 21 | Motion: YES | Expected: FULL | Actual: FULL | Power: 68 W | Fault: NO
+L05 | Lux: 42 | Motion: NO | Expected: DIM | Actual: DIM | Power: 27 W | Fault: NO
+L06 | Lux: 88 | Motion: NO | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L07 | Lux: 63 | Motion: NO | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L08 | Lux: 37 | Motion: YES | Expected: FULL | Actual: FULL | Power: 68 W | Fault: NO
+Current Power: 258 W
+
+SIMULATION CYCLE 5
+L01 | Lux: 88 | Motion: YES | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L02 | Lux: 34 | Motion: NO | Expected: DIM | Actual: DIM | Power: 27 W | Fault: NO
+L03 | Lux: 36 | Motion: YES | Expected: FULL | Actual: FULL | Power: 68 W | Fault: NO
+L04 | Lux: 84 | Motion: YES | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L05 | Lux: 95 | Motion: YES | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L06 | Lux: 54 | Motion: YES | Expected: OFF | Actual: OFF | Power: 0 W | Fault: NO
+L07 | Lux: 14 | Motion: YES | Expected: FULL | Actual: FULL | Power: 68 W | Fault: NO
+L08 | Lux: 25 | Motion: YES | Expected: FULL | Actual: FULL | Power: 68 W | Fault: NO
+Current Power: 231 W
+
+SIMULATION CYCLE 1
+L01 | Lux: 99 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L02 | Lux: 5 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L03 | Lux: 50 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L04 | Lux: 84 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L05 | Lux: 42 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L06 | Lux: 99 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L07 | Lux: 79 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L08 | Lux: 61 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+Current Power: 163 W
+Power Saved: 381 W
+Energy Saving: 70.0368%
+
+SIMULATION CYCLE 2
+L01 | Lux: 23 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L02 | Lux: 15 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L03 | Lux: 30 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L04 | Lux: 16 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L05 | Lux: 64 | Motion: NO | Expected: OFF | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: YES
+L06 | Lux: 5 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L07 | Lux: 79 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L08 | Lux: 70 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+Current Power: 285 W
+Power Saved: 259 W
+Energy Saving: 47.6103%
+
+SIMULATION CYCLE 3
+L01 | Lux: 34 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L02 | Lux: 18 | Motion: YES | Expected: FULL | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: YES
+L03 | Lux: 31 | Motion: NO | Expected: DIM | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: YES
+L04 | Lux: 10 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L05 | Lux: 20 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L06 | Lux: 45 | Motion: YES | Expected: FULL | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: YES
+L07 | Lux: 45 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L08 | Lux: 35 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+Current Power: 176 W
+Power Saved: 368 W
+Energy Saving: 67.6471%
+
+SIMULATION CYCLE 4
+L01 | Lux: 89 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L02 | Lux: 33 | Motion: YES | Expected: FULL | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: YES
+L03 | Lux: 97 | Motion: YES | Expected: OFF | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: YES
+L04 | Lux: 96 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L05 | Lux: 69 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L06 | Lux: 28 | Motion: YES | Expected: FULL | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: YES
+L07 | Lux: 75 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L08 | Lux: 89 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+Current Power: 27 W
+Power Saved: 517 W
+Energy Saving: 95.0368%
+
+SIMULATION CYCLE 5
+L01 | Lux: 58 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L02 | Lux: 8 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L03 | Lux: 88 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L04 | Lux: 56 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L05 | Lux: 77 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L06 | Lux: 27 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L07 | Lux: 14 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L08 | Lux: 86 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+Current Power: 163 W
+Power Saved: 381 W
+Energy Saving: 70.0368%
+
+SIMULATION CYCLE 1
+L01 | Lux: 19 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L02 | Lux: 32 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L03 | Lux: 43 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L04 | Lux: 16 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L05 | Lux: 79 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L06 | Lux: 87 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L07 | Lux: 18 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L08 | Lux: 18 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+Current Power: 285 W
+Power Saved: 259 W
+Energy Saving: 47.6103%
+
+SIMULATION CYCLE 2
+L01 | Lux: 92 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L02 | Lux: 20 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L03 | Lux: 45 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L04 | Lux: 3 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L05 | Lux: 60 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L06 | Lux: 91 | Motion: NO | Expected: OFF | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: YES
+L07 | Lux: 43 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L08 | Lux: 58 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+Current Power: 217 W
+Power Saved: 327 W
+Energy Saving: 60.1103%
+
+SIMULATION CYCLE 3
+L01 | Lux: 79 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L02 | Lux: 56 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L03 | Lux: 64 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L04 | Lux: 69 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L05 | Lux: 45 | Motion: YES | Expected: FULL | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: YES
+L06 | Lux: 51 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L07 | Lux: 46 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L08 | Lux: 0 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+Current Power: 95 W
+Power Saved: 449 W
+Energy Saving: 82.5368%
+
+SIMULATION CYCLE 4
+L01 | Lux: 100 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L02 | Lux: 4 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L03 | Lux: 7 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L04 | Lux: 45 | Motion: NO | Expected: DIM | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: YES
+L05 | Lux: 89 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L06 | Lux: 100 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L07 | Lux: 36 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L08 | Lux: 31 | Motion: NO | Expected: DIM | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: YES
+Current Power: 204 W
+Power Saved: 340 W
+Energy Saving: 62.5%
+
+SIMULATION CYCLE 5
+L01 | Lux: 64 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L02 | Lux: 45 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L03 | Lux: 4 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L04 | Lux: 36 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L05 | Lux: 69 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L06 | Lux: 92 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L07 | Lux: 68 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L08 | Lux: 47 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+Current Power: 149 W
+Power Saved: 395 W
+Energy Saving: 72.6103%
+
+SIMULATION CYCLE 1
+L01 | Lux: 89 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L02 | Lux: 41 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L03 | Lux: 67 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L04 | Lux: 60 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L05 | Lux: 32 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L06 | Lux: 67 | Motion: YES | Expected: OFF | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: YES
+L07 | Lux: 1 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L08 | Lux: 64 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+Current Power: 149 W
+Power Saved: 395 W
+Energy Saving: 72.6103%
+
+SIMULATION CYCLE 2
+L01 | Lux: 9 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L02 | Lux: 13 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L03 | Lux: 84 | Motion: NO | Expected: OFF | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: YES
+L04 | Lux: 100 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L05 | Lux: 97 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L06 | Lux: 37 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L07 | Lux: 3 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L08 | Lux: 81 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+Current Power: 258 W
+Power Saved: 286 W
+Energy Saving: 52.5735%
+
+SIMULATION CYCLE 3
+L01 | Lux: 5 | Motion: YES | Expected: FULL | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: YES
+L02 | Lux: 74 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L03 | Lux: 87 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L04 | Lux: 25 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L05 | Lux: 87 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L06 | Lux: 86 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L07 | Lux: 13 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L08 | Lux: 14 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+Current Power: 163 W
+Power Saved: 381 W
+Energy Saving: 70.0368%
+
+SIMULATION CYCLE 4
+L01 | Lux: 41 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L02 | Lux: 58 | Motion: NO | Expected: OFF | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: YES
+L03 | Lux: 83 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L04 | Lux: 2 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L05 | Lux: 100 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L06 | Lux: 61 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L07 | Lux: 13 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L08 | Lux: 22 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+Current Power: 176 W
+Power Saved: 368 W
+Energy Saving: 67.6471%
+
+SIMULATION CYCLE 5
+L01 | Lux: 47 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L02 | Lux: 90 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L03 | Lux: 94 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L04 | Lux: 7 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L05 | Lux: 98 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L06 | Lux: 33 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L07 | Lux: 24 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L08 | Lux: 96 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+Current Power: 272 W
+Power Saved: 272 W
+Energy Saving: 50%
+
+SIMULATION CYCLE 1
+L01 | Lux: 100 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L02 | Lux: 22 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L03 | Lux: 11 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L04 | Lux: 49 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L05 | Lux: 75 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L06 | Lux: 66 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L07 | Lux: 46 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L08 | Lux: 14 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+Current Power: 299 W
+Power Saved: 245 W
+Energy Saving: 45.0368%
+
+SIMULATION CYCLE 2
+L01 | Lux: 42 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L02 | Lux: 48 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L03 | Lux: 62 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L04 | Lux: 35 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L05 | Lux: 64 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L06 | Lux: 89 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L07 | Lux: 84 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L08 | Lux: 75 | Motion: YES | Expected: OFF | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: YES
+Current Power: 190 W
+Power Saved: 354 W
+Energy Saving: 65.0735%
+
+SIMULATION CYCLE 3
+L01 | Lux: 49 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L02 | Lux: 76 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L03 | Lux: 82 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L04 | Lux: 82 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L05 | Lux: 66 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L06 | Lux: 38 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L07 | Lux: 84 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L08 | Lux: 7 | Motion: NO | Expected: DIM | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: YES
+Current Power: 54 W
+Power Saved: 490 W
+Energy Saving: 90.0735%
+
+SIMULATION CYCLE 4
+L01 | Lux: 4 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L02 | Lux: 3 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L03 | Lux: 84 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L04 | Lux: 68 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L05 | Lux: 79 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L06 | Lux: 13 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L07 | Lux: 27 | Motion: NO | Expected: DIM | Actual: DIM | Brightness: 40% | Power: 27 W | Fault: NO
+L08 | Lux: 75 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+Current Power: 149 W
+Power Saved: 395 W
+Energy Saving: 72.6103%
+
+SIMULATION CYCLE 5
+L01 | Lux: 1 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L02 | Lux: 89 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L03 | Lux: 44 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L04 | Lux: 93 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L05 | Lux: 81 | Motion: YES | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+L06 | Lux: 16 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L07 | Lux: 41 | Motion: YES | Expected: FULL | Actual: FULL | Brightness: 100% | Power: 68 W | Fault: NO
+L08 | Lux: 81 | Motion: NO | Expected: OFF | Actual: OFF | Brightness: 0% | Power: 0 W | Fault: NO
+Current Power: 272 W
+Power Saved: 272 W
+Energy Saving: 50%

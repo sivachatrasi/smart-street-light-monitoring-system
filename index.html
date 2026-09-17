@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luma | Smart Street Light</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">✦</div>
+
+            <div>
+                <h2>Luma</h2>
+                <span>SMART LIGHTING</span>
+            </div>
+        </div>
+
+        <nav>
+
+            <p class="nav-title">MAIN</p>
+
+            <a class="nav-item active" href="#">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a class="nav-item" href="#lights">
+                <span>◉</span>
+                Street Lights
+            </a>
+
+            <a class="nav-item" href="#energy">
+                <span>ϟ</span>
+                Energy
+            </a>
+
+            <a class="nav-item" href="#faults">
+                <span>!</span>
+                Faults
+                <b id="sidebarFaults">2</b>
+            </a>
+
+            <p class="nav-title">SYSTEM</p>
+
+            <a class="nav-item" href="#analytics">
+                <span>▥</span>
+                Analytics
+            </a>
+
+            <a class="nav-item" href="#logs">
+                <span>≡</span>
+                Data Logs
+            </a>
+
+        </nav>
+
+        <div class="system-status">
+
+            <div class="status-dot"></div>
+
+            <div>
+                <strong>System Online</strong>
+                <small>Simulation active</small>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- HEADER -->
+
+        <header class="topbar">
+
+            <div>
+
+                <p class="breadcrumb">
+                    MONITORING / OVERVIEW
+                </p>
+
+                <h1>Street Light Dashboard</h1>
+
+            </div>
+
+            <div class="header-right">
+
+                <div class="simulation">
+                    <span class="live-dot"></span>
+                    LIVE SIMULATION
+                </div>
+
+                <div class="time" id="clock">
+                    18:42:15
+                </div>
+
+                <div class="avatar">
+                    SL
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= SUMMARY CARDS ================= -->
+
+        <section class="summary-grid">
+
+            <div class="stat-card">
+
+                <div class="stat-top">
+
+                    <span class="stat-label">
+                        TOTAL LIGHTS
+                    </span>
+
+                    <div class="stat-icon blue">
+                        ◉
+                    </div>
+
+                </div>
+
+                <div class="stat-value">
+                    8
+                </div>
+
+                <div class="stat-bottom">
+                    <span class="positive">● 6 active</span>
+                    <span>2 off</span>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-top">
+
+                    <span class="stat-label">
+                        CURRENT POWER
+                    </span>
+
+                    <div class="stat-icon yellow">
+                        ϟ
+                    </div>
+
+                </div>
+
+                <div class="stat-value">
+
+                    <span id="currentPower">
+                        149
+                    </span>
+
+                    <small>W</small>
+
+                </div>
+
+                <div class="stat-bottom">
+                    <span class="positive">↓ 72.6%</span>
+                    <span>vs max</span>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-top">
+
+                    <span class="stat-label">
+                        ENERGY SAVED
+                    </span>
+
+                    <div class="stat-icon green">
+                        ↗
+                    </div>
+
+                </div>
+
+                <div class="stat-value">
+
+                    <span id="energySaving">
+                        72.6
+                    </span>
+
+                    <small>%</small>
+
+                </div>
+
+                <div class="stat-bottom">
+                    <span class="positive">Excellent</span>
+                    <span>efficiency</span>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card danger-card">
+
+                <div class="stat-top">
+
+                    <span class="stat-label">
+                        FAULTS DETECTED
+                    </span>
+
+                    <div class="stat-icon red">
+                        !
+                    </div>
+
+                </div>
+
+                <div class="stat-value" id="faultCount">
+                    2
+                </div>
+
+                <div class="stat-bottom">
+                    <span class="danger-text">
+                        ● Attention required
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STREET MAP + LIGHT LIST ================= -->
+
+        <section class="street-section">
+
+            <!-- STREET MAP -->
+
+            <div class="panel street-map-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <p class="panel-kicker">
+                            LIVE NETWORK
+                        </p>
+
+                        <h2>
+                            Street Light Map
+                        </h2>
+
+                    </div>
+
+                    <div class="map-legend">
+
+                        <span>
+                            <i class="legend-full"></i>
+                            Full
+                        </span>
+
+                        <span>
+                            <i class="legend-dim"></i>
+                            Dim
+                        </span>
+
+                        <span>
+                            <i class="legend-off"></i>
+                            Off
+                        </span>
+
+                        <span>
+                            <i class="legend-fault"></i>
+                            Fault
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="street-map">
+
+                    <!-- ROAD -->
+
+                    <div class="road">
+
+                        <div class="road-line"></div>
+
+                        <div class="road-label">
+                            SMART CITY ROAD
+                        </div>
+
+                    </div>
+
+
+                    <!-- L01 -->
+
+                    <div class="street-light light-1 full-light"
+                         onclick="showLightInfo(0)">
+
+                        <div class="light-glow"></div>
+
+                        <div class="lamp-head">
+                            <span></span>
+                        </div>
+
+                        <div class="lamp-pole"></div>
+
+                        <div class="lamp-base"></div>
+
+                        <div class="light-label">
+                            <strong>L01</strong>
+                            <small>FULL</small>
+                        </div>
+
+                        <div class="motion-indicator">
+                            MOTION
+                        </div>
+
+                    </div>
+
+
+                    <!-- L02 -->
+
+                    <div class="street-light light-2 off-light"
+                         onclick="showLightInfo(1)">
+
+                        <div class="light-glow"></div>
+
+                        <div class="lamp-head">
+                            <span></span>
+                        </div>
+
+                        <div class="lamp-pole"></div>
+
+                        <div class="lamp-base"></div>
+
+                        <div class="light-label">
+                            <strong>L02</strong>
+                            <small>OFF</small>
+                        </div>
+
+                    </div>
+
+
+                    <!-- L03 -->
+
+                    <div class="street-light light-3 full-light"
+                         onclick="showLightInfo(2)">
+
+                        <div class="light-glow"></div>
+
+                        <div class="lamp-head">
+                            <span></span>
+                        </div>
+
+                        <div class="lamp-pole"></div>
+
+                        <div class="lamp-base"></div>
+
+                        <div class="light-label">
+                            <strong>L03</strong>
+                            <small>FULL</small>
+                        </div>
+
+                        <div class="motion-indicator">
+                            MOTION
+                        </div>
+
+                    </div>
+
+
+                    <!-- L04 -->
+
+                    <div class="street-light light-4 dim-light"
+                         onclick="showLightInfo(3)">
+
+                        <div class="light-glow"></div>
+
+                        <div class="lamp-head">
+                            <span></span>
+                        </div>
+
+                        <div class="lamp-pole"></div>
+
+                        <div class="lamp-base"></div>
+
+                        <div class="light-label">
+                            <strong>L04</strong>
+                            <small>DIM</small>
+                        </div>
+
+                    </div>
+
+
+                    <!-- L05 -->
+
+                    <div class="street-light light-5 fault-light"
+                         onclick="showLightInfo(4)">
+
+                        <div class="light-glow"></div>
+
+                        <div class="lamp-head">
+                            <span></span>
+                        </div>
+
+                        <div class="lamp-pole"></div>
+
+                        <div class="lamp-base"></div>
+
+                        <div class="light-label">
+                            <strong>L05</strong>
+                            <small>FAULT</small>
+                        </div>
+
+                        <div class="fault-pulse">
+                            !
+                        </div>
+
+                    </div>
+
+
+                    <!-- L06 -->
+
+                    <div class="street-light light-6 off-light"
+                         onclick="showLightInfo(5)">
+
+                        <div class="light-glow"></div>
+
+                        <div class="lamp-head">
+                            <span></span>
+                        </div>
+
+                        <div class="lamp-pole"></div>
+
+                        <div class="lamp-base"></div>
+
+                        <div class="light-label">
+                            <strong>L06</strong>
+                            <small>OFF</small>
+                        </div>
+
+                    </div>
+
+
+                    <!-- L07 -->
+
+                    <div class="street-light light-7 full-light"
+                         onclick="showLightInfo(6)">
+
+                        <div class="light-glow"></div>
+
+                        <div class="lamp-head">
+                            <span></span>
+                        </div>
+
+                        <div class="lamp-pole"></div>
+
+                        <div class="lamp-base"></div>
+
+                        <div class="light-label">
+                            <strong>L07</strong>
+                            <small>FULL</small>
+                        </div>
+
+                        <div class="motion-indicator">
+                            MOTION
+                        </div>
+
+                    </div>
+
+
+                    <!-- L08 -->
+
+                    <div class="street-light light-8 fault-light"
+                         onclick="showLightInfo(7)">
+
+                        <div class="light-glow"></div>
+
+                        <div class="lamp-head">
+                            <span></span>
+                        </div>
+
+                        <div class="lamp-pole"></div>
+
+                        <div class="lamp-base"></div>
+
+                        <div class="light-label">
+                            <strong>L08</strong>
+                            <small>FAULT</small>
+                        </div>
+
+                        <div class="fault-pulse">
+                            !
+                        </div>
+
+                    </div>
+
+
+                    <!-- ROAD SIDE MARKERS -->
+
+                    <div class="road-side-label top-label">
+                        NORTH ROAD
+                    </div>
+
+                    <div class="road-side-label bottom-label">
+                        SOUTH ROAD
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- LIGHT DETAILS -->
+
+            <div class="panel selected-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <p class="panel-kicker">
+                            SELECTED LIGHT
+                        </p>
+
+                        <h2 id="selectedTitle">
+                            L01 — North Road
+                        </h2>
+
+                    </div>
+
+                    <span class="online-badge">
+                        ACTIVE
+                    </span>
+
+                </div>
+
+
+                <div class="selected-content">
+
+                    <div class="selected-light-icon">
+                        💡
+                    </div>
+
+                    <div class="selected-status" id="selectedStatus">
+                        FULL
+                    </div>
+
+
+                    <div class="detail-grid">
+
+                        <div>
+                            <span>AMBIENT LIGHT</span>
+                            <strong id="selectedLux">
+                                22 lux
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>MOTION</span>
+                            <strong id="selectedMotion">
+                                YES
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>EXPECTED</span>
+                            <strong id="selectedExpected">
+                                FULL
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>ACTUAL</span>
+                            <strong id="selectedActual">
+                                FULL
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>BRIGHTNESS</span>
+                            <strong id="selectedBrightness">
+                                100%
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>POWER</span>
+                            <strong id="selectedPower">
+                                68 W
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LIGHT TABLE ================= -->
+
+        <section class="panel lights-panel" id="lights">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <p class="panel-kicker">
+                        NETWORK
+                    </p>
+
+                    <h2>
+                        Street Light Monitor
+                    </h2>
+
+                </div>
+
+                <button class="refresh-btn" onclick="runSimulation()">
+                    ↻ Refresh Simulation
+                </button>
+
+            </div>
+
+
+            <div class="light-list" id="lightList">
+                <!-- Generated by JavaScript -->
+            </div>
+
+        </section>
+
+
+        <!-- ================= ANALYTICS ================= -->
+
+        <section class="analytics-grid" id="analytics">
+
+            <!-- ENERGY -->
+
+            <div class="panel energy-panel" id="energy">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <p class="panel-kicker">
+                            POWER ANALYTICS
+                        </p>
+
+                        <h2>
+                            Energy Consumption
+                        </h2>
+
+                    </div>
+
+                    <div class="chart-legend">
+                        <span>
+                            <i></i>
+                            Current Power
+                        </span>
+
+                        <strong>
+                            544 W max
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="chart">
+
+                    <div class="y-labels">
+
+                        <span>500W</span>
+                        <span>400W</span>
+                        <span>300W</span>
+                        <span>200W</span>
+                        <span>100W</span>
+                        <span>0W</span>
+
+                    </div>
+
+
+                    <div class="chart-area">
+
+                        <div class="grid-line line-1"></div>
+                        <div class="grid-line line-2"></div>
+                        <div class="grid-line line-3"></div>
+                        <div class="grid-line line-4"></div>
+                        <div class="grid-line line-5"></div>
+
+
+                        <svg viewBox="0 0 800 250"
+                             preserveAspectRatio="none"
+                             class="chart-svg">
+
+                            <defs>
+
+                                <linearGradient
+                                    id="areaGradient"
+                                    x1="0"
+                                    y1="0"
+                                    x2="0"
+                                    y2="1">
+
+                                    <stop
+                                        offset="0%"
+                                        stop-opacity=".35"/>
+
+                                    <stop
+                                        offset="100%"
+                                        stop-opacity="0"/>
+
+                                </linearGradient>
+
+                            </defs>
+
+
+                            <path
+                                d="M0,150
+                                   C70,135 90,175 150,145
+                                   C210,115 240,170 300,130
+                                   C360,90 390,145 450,105
+                                   C510,70 550,125 600,90
+                                   C660,50 700,100 800,65
+                                   L800,250 L0,250 Z"
+                                fill="url(#areaGradient)"
+                                class="chart-fill"/>
+
+
+                            <path
+                                d="M0,150
+                                   C70,135 90,175 150,145
+                                   C210,115 240,170 300,130
+                                   C360,90 390,145 450,105
+                                   C510,70 550,125 600,90
+                                   C660,50 700,100 800,65"
+                                fill="none"
+                                class="chart-line"/>
+
+                        </svg>
+
+
+                        <div class="x-labels">
+
+                            <span>Cycle 1</span>
+                            <span>Cycle 2</span>
+                            <span>Cycle 3</span>
+                            <span>Cycle 4</span>
+                            <span>Cycle 5</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- EFFICIENCY -->
+
+            <div class="panel efficiency-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <p class="panel-kicker">
+                            EFFICIENCY
+                        </p>
+
+                        <h2>
+                            System Performance
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="efficiency-circle">
+
+                    <div class="circle-inner">
+
+                        <strong id="efficiencyValue">
+                            72.6%
+                        </strong>
+
+                        <span>
+                            ENERGY SAVED
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="efficiency-stats">
+
+                    <div>
+                        <span>MAX POWER</span>
+                        <strong>544 W</strong>
+                    </div>
+
+                    <div>
+                        <span>CURRENT</span>
+                        <strong id="efficiencyCurrent">
+                            149 W
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>SAVED</span>
+                        <strong id="efficiencySaved">
+                            395 W
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FAULTS ================= -->
+
+        <section class="panel fault-section" id="faults">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <p class="panel-kicker">
+                        ALERTS
+                    </p>
+
+                    <h2>
+                        Fault Monitoring
+                    </h2>
+
+                </div>
+
+                <span class="alert-count">
+                    <span id="faultHeaderCount">2</span> ACTIVE
+                </span>
+
+            </div>
+
+            <div id="faultList">
+
+                <!-- Generated by JavaScript -->
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer>
+
+            <span>
+                SMART STREET LIGHT MONITORING & AUTOMATION SYSTEM
+            </span>
+
+            <span>
+                C++ IoT Simulation
+                <b>•</b>
+                Dashboard v1.0
+            </span>
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<!-- ================= LIGHT INFO POPUP ================= -->
+
+<div class="light-modal" id="lightModal">
+
+    <div class="modal-box">
+
+        <button class="modal-close" onclick="closeLightInfo()">
+            ×
+        </button>
+
+        <p class="panel-kicker">
+            STREET LIGHT DETAILS
+        </p>
+
+        <h2 id="modalTitle">
+            L01
+        </h2>
+
+        <div class="modal-status" id="modalStatus">
+            FULL
+        </div>
+
+        <div class="modal-grid">
+
+            <div>
+                <span>LUX</span>
+                <strong id="modalLux">22</strong>
+            </div>
+
+            <div>
+                <span>MOTION</span>
+                <strong id="modalMotion">YES</strong>
+            </div>
+
+            <div>
+                <span>EXPECTED</span>
+                <strong id="modalExpected">FULL</strong>
+            </div>
+
+            <div>
+                <span>ACTUAL</span>
+                <strong id="modalActual">FULL</strong>
+            </div>
+
+            <div>
+                <span>BRIGHTNESS</span>
+                <strong id="modalBrightness">100%</strong>
+            </div>
+
+            <div>
+                <span>POWER</span>
+                <strong id="modalPower">68 W</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
