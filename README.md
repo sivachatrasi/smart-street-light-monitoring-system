@@ -43,7 +43,7 @@ If they are different, the system identifies it as a **fault**.
 
 ## 🏗️ System Architecture
 
-```text
+
 Virtual Sensors
       ↓
 C++ Simulation Engine
@@ -59,7 +59,10 @@ Fault Detection
 CSV / Log Files
       ↓
 Web Dashboard
-🛠️ Technologies Used
+
+---
+
+## 🛠️ Technologies Used
 C++ – Simulation and automation logic
 HTML – Dashboard structure
 CSS – Dashboard styling
@@ -67,7 +70,8 @@ JavaScript – Dashboard functionality
 CSV – Simulation data storage
 VS Code – Development environment
 Git & GitHub – Version control
-📊 Energy Monitoring
+
+## 📊 Energy Monitoring
 
 The system calculates the power consumed by each street light based on its brightness level.
 
@@ -77,7 +81,7 @@ OFF → 0 W
 
 The system uses these values to monitor total power consumption and calculate energy savings.
 
-🚨 Fault Detection
+## 🚨 Fault Detection
 
 The system detects faults by comparing:
 
@@ -91,7 +95,7 @@ Fault:    YES
 
 This allows the system to identify street lights that are not behaving as expected.
 
-📁 Project Structure
+## 📁 Project Structure
 smart-street-light-monitoring-system/
 │
 ├── street_light.cpp
@@ -101,7 +105,8 @@ smart-street-light-monitoring-system/
 ├── street_light_data.csv
 ├── street_light_log.txt
 └── README.md
-▶️ How to Run
+
+## ▶️ How to Run
 1. Compile the C++ program
 
 Open the project folder in VS Code and run:
@@ -123,13 +128,13 @@ in a browser.
 
 The dashboard reads the generated CSV data and displays the simulated street light information.
 
-💻 Project Type
+## 💻 Project Type
 
 Software-based IoT Simulation
 
 No physical Arduino, ESP32, or sensors are required. The project uses simulated sensor values to demonstrate how a smart street lighting system can operate.
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 Integration with real ESP32/Arduino hardware
 Real LDR and PIR sensors
 Cloud-based IoT monitoring
@@ -138,16 +143,16 @@ Real-time notifications
 GPS-based fault location
 Historical energy analytics
 Remote street light control
-👩‍💻 Author
 
-Satwika
+## 👩‍💻 Author
+
+Ch.Siva
 
 Built as a C++ + IoT based portfolio project demonstrating automation, monitoring, data logging, and fault detection.
 
 ⭐ If you find this project interesting, feel free to explore the code and dashboard.
 
-
-### Then upload it
+Then upload it
 
 In PowerShell:
 
